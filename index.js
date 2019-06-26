@@ -1,13 +1,16 @@
 // https://simpleprogrammer.com/programming-interview-questions/
 // How do you find the missing number in a given integer array of 1 to 100?
-arr = [1, 3, 4, 5, 6,30, 34, 26, 80, 29, 89, 39, 20]
+arr = [1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 13]
 function findMissingNum(arr) {
+    missingNums = []
     for (var i = 0; i < arr.length; i++) {
         console.log(arr[i])
+        console.log(i+1)
+        if(arr[i] != (i+1)){
+            missingNums.push(i + 1);
+        }
     }
-    return arr.sort( (a, b) => (
-        (a-b)
-    ));
+    return missingNums
 }
 
 console.log(findMissingNum(arr))
