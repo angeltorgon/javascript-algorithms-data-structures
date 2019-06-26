@@ -1,19 +1,31 @@
 // https://simpleprogrammer.com/programming-interview-questions/
-// How do you find the missing number in a given integer array of 1 to 100?
-arr = [1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 13]
+
+//=============================== How do you find the missing number in a given integer array of 1 to 100?
+arr = [2, 8, 3, 5, 6, 7, 1, 9, 10, 11, 13]
 function findMissingNum(arr) {
-    missingNums = []
     for (var i = 0; i < arr.length; i++) {
-        console.log(arr[i])
-        console.log(i+1)
+        arr.sort((a, b) => (a-b));
         if(arr[i] != (i+1)){
-            missingNums.push(i + 1);
+            return i + 1;
         }
     }
-    return missingNums
 }
 
 console.log(findMissingNum(arr))
+
+//=============================== How do you find all missing numbers in a given integer array of 1 to 100?
+// function findMissingNum(arr) {
+//     for (var i = 0; i < arr.length; i++) {
+//         missingNums = []
+//         // console.log(arr[i])
+//         // console.log(i+1)
+//         if(arr[i] != (i+1)){
+//             return i + 1;
+//         }
+//     }
+// }
+
+// console.log(findMissingNum(arr))
 
 
 // How do you find the duplicate number on a given integer array?
