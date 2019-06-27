@@ -1,7 +1,8 @@
 // https://simpleprogrammer.com/programming-interview-questions/
 
 //=============================== How do you find the missing number in a given integer array of 1 to 100?
-arr = [2, 8, 3, 5, 6, 7, 1, 9, 10, 11, 13]
+arr = [2, 3, 5, 7, 1, 9, 10, 6]
+
 function findMissingNum(arr) {
     for (var i = 0; i < arr.length; i++) {
         arr.sort((a, b) => (a-b));
@@ -14,18 +15,47 @@ function findMissingNum(arr) {
 console.log(findMissingNum(arr))
 
 //=============================== How do you find all missing numbers in a given integer array of 1 to 100?
-// function findMissingNum(arr) {
-//     for (var i = 0; i < arr.length; i++) {
-//         missingNums = []
-//         // console.log(arr[i])
-//         // console.log(i+1)
-//         if(arr[i] != (i+1)){
-//             return i + 1;
-//         }
-//     }
-// }
+function findMissingNums(arr) {
+    missingNums = []; // this array will save all of the missing numbers 
 
-// console.log(findMissingNum(arr))
+    for (var inputIndex = 0, targetValue = arr[0]; targetValue <= arr[arr.length - 1]; targetValue++) {
+        // in this for loop we have two inputs that will be changing with each iteration: inputIndex, targetValue
+        // 
+
+        console.log(`inputIndex: ${inputIndex} targetValue: ${targetValue}`);
+        console.log(targetValue);
+
+        if( arr[inputIndex] != targetValue) {
+            // here we are comparing the
+            missingNums.push(targetValue);
+        } else {
+            inputIndex++;
+        }
+    };
+
+    return missingNums;
+}
+
+console.log(findMissingNums(arr));
+
+// function findMissing(input) {
+
+//     var result = []; // this is gonna store all of the missing numbers
+  
+//     for (var inputIndex = 0, targetValue = input[0]; targetValue <= input[input.length - 1]; targetValue++) {
+//         // this for loop 
+
+//       if (input[inputIndex] != targetValue) {
+//         result.push(targetValue);
+//       }
+//       else {
+//         inputIndex++;
+//       }
+//     }
+  
+//     return result;
+//   }
+
 
 
 // How do you find the duplicate number on a given integer array?
