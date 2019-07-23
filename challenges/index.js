@@ -1,32 +1,30 @@
 // https://simpleprogrammer.com/programming-interview-questions/
 
 //=============================== How do you find the missing number in a given integer array of 1 to 100?
-arr = [2, 3, 5, 7, 1, 9, 10, 6]
 
-function findMissingNum(arr) {
-    for (var i = 0; i < arr.length; i++) {
-        arr.sort((a, b) => (a-b));
-        if(arr[i] != (i+1)){
+array = [2, 3, 5, 7, 1, 9, 10, 6, 15]
+
+function findMissingNum(array) {
+    for (var i = 0; i < array.length; i++) {
+        array.sort((a, b) => (a-b));
+        if(array[i] != (i+1)){
             return i + 1;
         }
     }
 }
 
-console.log(findMissingNum(arr))
+console.log(findMissingNum(array))
 
 //=============================== How do you find all missing numbers in a given integer array of 1 to 100?
-function findMissingNums(arr) {
+function findMissingNums(array) {
     missingNums = []; // this array will save all of the missing numbers 
 
-    for (var inputIndex = 0, targetValue = arr[0]; targetValue <= arr[arr.length - 1]; targetValue++) {
+    for (var inputIndex = 0, targetValue = array[0]; targetValue <= array[array.length - 1]; targetValue++) {
         // in this for loop we have two inputs that will be changing with each iteration: inputIndex, targetValue
         // 
-
-        console.log(`inputIndex: ${inputIndex} targetValue: ${targetValue}`);
-        console.log(targetValue);
-
-        if( arr[inputIndex] != targetValue) {
-            // here we are comparing the
+        console.log(targetValue)
+        if( array[inputIndex] != targetValue) {
+            // array[inputIndex] 
             missingNums.push(targetValue);
         } else {
             inputIndex++;
@@ -36,8 +34,9 @@ function findMissingNums(arr) {
     return missingNums;
 }
 
-console.log(findMissingNums(arr));
+console.log(findMissingNums(array));
 
+// ======================================== SOLUTION
 // function findMissing(input) {
 
 //     var result = []; // this is gonna store all of the missing numbers
@@ -59,6 +58,18 @@ console.log(findMissingNums(arr));
 
 
 // How do you find the duplicate number on a given integer array?
+
+function findDuplicate(array) {
+    
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        
+        if (element )
+    }
+}
+
+
+
 // How do you find the largest and smallest number in an unsorted integer array?
 // How do you find all pairs of an integer array whose sum is equal to a given number?
 // How do you find duplicate numbers in an array if it contains multiple duplicates?
