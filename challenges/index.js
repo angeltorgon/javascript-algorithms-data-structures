@@ -43,14 +43,14 @@ console.log(findMissingNums(array));
 
 // How do you find the duplicate number on a given integer array?
 
-function findDuplicate(array) {
+// function findDuplicate(array) {
     
-    for (let i = 0; i < array.length; i++) {
-        const element = array[i];
+//     for (let i = 0; i < array.length; i++) {
+//         const element = array[i];
         
-        if (element )
-    }
-}
+//         if (element )
+//     }
+// }
 
 
 
