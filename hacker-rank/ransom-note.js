@@ -40,6 +40,8 @@ function checkMagazine(magazine, note) {
 
 };
 
+// *^_@# *^_@# *^_@# *^_@# *^_@#  TESTS
+
 const mag1 = ["give", "me", "one", "grand", "today", "night"];
 const note1 = ["give", "one", "grand", "today", "today"];
 
