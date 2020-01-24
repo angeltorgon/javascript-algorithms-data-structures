@@ -22,14 +22,34 @@ returns 5
 
 
 function minimumSwaps(arr) {
-	console.log("arr", arr);
-
+	// initialize swaps counter
+	let swapCounter = 0;
+	// loop over arr
+	for(let i = 0; i < arr.length; i++) {
+		// if arr[i] !== i + 1
+		if(arr[i] !== i + 1){
+			// find index of correct value
+			const correctIndex = arr.indexOf(i + 1)
+			// swatp current index with index of correct value
+			const currValue = arr[i];
+			arr[i] = arr[correctIndex];
+			arr[correctIndex] = currValue;
+			// increase swaps counter
+			swapCounter ++;
+		}
+	}
+	// return swaps counter
+	return swapCounter;
 }
 
 const arr1 = [1, 3, 2]; // 1
 const arr2 = [1, 4, 2, 3]; // 2
 const arr3 = [4, 1, 2, 3]; // 3
+const arr4 = [2, 3, 4, 1, 5] // 3
+const arr5 = [ 4, 3, 1, 2 ] // 3
+const arr6 = [7, 1, 3, 2, 4, 5, 6] // 5
 
-minimumSwaps(arr1);
-
+//minimumSwaps(arr1);
+//minimumSwaps(arr2);
+console.log(minimumSwaps(arr6));
 
