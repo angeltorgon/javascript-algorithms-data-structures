@@ -44,36 +44,22 @@ var twoSum = function(nums, target) {
 	for(let i = 0; i < nums.length; i++) {
 		const key = nums[i];
 		const value = i;
-		console.log("i", i);
-		console.log("key", key);
-		console.log("value", value);
 		if(numsMap[key]) {
 			numsMap[key].push(value);	
 		} else {
 			numsMap[`${key}`] = [value];
 		}
 	};
-	// return the indexes of the matching value
 
+	// return the indexes of the matching value
 	for(let num in numsMap) {
 		const index1 = parseInt(num);
 		const difference = target - index1;
 		if(numsMap[`${difference}`]) {
-			console.log("difference", difference);
-			console.log("index of difference", numsMap[difference])
 				const indexes =  [numsMap[`${index1}`][0], numsMap[`${difference}`][numsMap[`${difference}`].length - 1]]
-				console.log("indexes", indexes);
 				return indexes;
 		}
 	};
-
-
-
-	console.log("numsMap", numsMap);
-	console.log("nums", nums);
-	console.log("target", target);
-
-
 };
 
 // -+^+-  -+^+-  -+^+-  -+^+-  -+^+-  TESTS
