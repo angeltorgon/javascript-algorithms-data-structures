@@ -19,18 +19,34 @@ checkMagazine(magazine, note); // prints `No`
 */
 
 function checkMagazine(magazine, note) {
-	console.log("magazine", magazine);
-	console.log("note", note);
+	// initialize magMap
+	const magMap = {};
+
+	// use for loop to populate magMap
+	for(let i = 0; i < magazine.length; i++) {
+		magMap[magazine[i]] = magMap[magazine[i]] + 1 || 1;
+	}
+
+	// loop through to note and check with map to see if all the words are there
+	for(let word of note){
+		if(!magMap[word]){
+			console.log("No");
+			return
+		};
+		magMap[word] --
+	};
+
+	console.log("Yes");
 
 };
 
 const mag1 = ["give", "me", "one", "grand", "today", "night"];
-const note = ["give", "one", "grand", "today"];
+const note1 = ["give", "one", "grand", "today", "today"];
 
 
 const mag2 = ["two", "times", "three", "is", "not", "four"]
 const note2 = ["two", "times", "two", "is", "four"]
 
 
-console.log(checkMagazine(mag1, mag2));
+console.log(checkMagazine(mag1, note1));
 
