@@ -1,1 +1,1 @@
-# javascript-code-challenges
+# JavaScript Algorithms and Data Structures
