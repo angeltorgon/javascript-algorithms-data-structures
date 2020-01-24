@@ -8,31 +8,38 @@
  * 
  */
 
+// *-+*- *-+*- *-+*- *-+*- *-+*-  SOLUTION 1
+
+// var twoSum = function(nums, target) {
+// 	// console.log("nums", nums);
+// 	console.log("target", target);
+// 
+// 	// initialize indexes arr
+// 	const indexes = [];
+// 	// loop over nums
+// 	console.log(`idx | val`);
+// 	for(let i = 0; i < nums.length; i++) {
+// 		console.log(`${i} --- ${nums[i]}`);
+// 		// check if nums[i] is less than target
+// 			// check differece between target and num[i] exists as value in nums
+// 			const secondIndex = nums.indexOf(target - nums[i]);
+// 			console.log("secondIndex", secondIndex);
+// 
+// 			// if num is found return arr of indexes
+// 			if(secondIndex > -1 && secondIndex !== i) {
+// 				const indexArr = [i, secondIndex];
+// 				return indexArr
+// 			};
+// 			console.log("second index -- " , secondIndex);
+// 	};
+// };
+
 var twoSum = function(nums, target) {
-	// console.log("nums", nums);
+	console.log("nums", nums);
 	console.log("target", target);
 
-	// initialize indexes arr
-	const indexes = [];
-	// loop over nums
-	console.log(`idx | val`);
-	for(let i = 0; i < nums.length; i++) {
-		console.log(`${i} --- ${nums[i]}`);
-		// check if nums[i] is less than target
-			// check differece between target and num[i] exists as value in nums
-			const secondIndex = nums.indexOf(target - nums[i]);
-			console.log("secondIndex", secondIndex);
 
-			// if num is found return arr of indexes
-			if(secondIndex > -1 && secondIndex !== i) {
-				const indexArr = [i, secondIndex];
-				return indexArr
-			};
-			console.log("second index -- " , secondIndex);
-	};
 };
-
-
 
 // -+^+-  -+^+-  -+^+-  -+^+-  -+^+-  TESTS
 
