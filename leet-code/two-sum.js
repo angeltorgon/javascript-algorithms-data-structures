@@ -53,11 +53,17 @@ var twoSum = function(nums, target) {
 
 	// return the indexes of the matching value
 	for(let num in numsMap) {
+
+		// get key to first index and difference needed to meet target
 		const index1 = parseInt(num);
 		const difference = target - index1;
+
+		// check if difference exists on map
 		if(numsMap[`${difference}`]) {
-				const indexes =  [numsMap[`${index1}`][0], numsMap[`${difference}`][numsMap[`${difference}`].length - 1]]
-				return indexes;
+
+			// if difference is in map then get index values from map and return array
+			const indexes =  [numsMap[`${index1}`][0], numsMap[`${difference}`][numsMap[`${difference}`].length - 1]]
+			return indexes;
 		}
 	};
 };
