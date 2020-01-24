@@ -34,6 +34,9 @@
 // 	};
 // };
 
+
+// *-+*- *-+*- *-+*- *-+*- *-+*-  SOLUTION 2
+
 var twoSum = function(nums, target) {
 	// create obj to store all values of nums
 	const numsMap = {};
