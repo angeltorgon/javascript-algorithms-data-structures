@@ -18,6 +18,8 @@ checkMagazine(magazine, note); // prints `No`
 
 */
 
+// 8-_== 8-_== 8-_== 8-_== 8-_== SOLUTION
+
 function checkMagazine(magazine, note) {
 	// initialize magMap
 	const magMap = {};
