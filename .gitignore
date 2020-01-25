@@ -63,4 +63,4 @@ typings/
 
 
 # all swap files
-.swp
+*.swp
