@@ -3,11 +3,12 @@ This repo is a collection of solutions for different types of algorithm and tech
 questions. Thera are also solutions for problems found several code challenge platforms like HackerRank and LeetCode.
 
 ## HackerRank
-* [new-year-chaos](hacker-rank/new-year-chaos.js)
-* [minimim-swaps-1](hacker-rank/minimum-swaps-2.js)
-* [ransom-note](hacker-rank/ransom-note.js)
-* [two-strings](hacker-rank/two-strings.js)
+* [New Year Chaos](hacker-rank/new-year-chaos.js)
+* [Minimum Swaps 2](hacker-rank/minimum-swaps-2.js)
+* [ransom Note](hacker-rank/ransom-note.js)
+* [Two Strings](hacker-rank/two-strings.js)
+* [Sherlock and Anagrams](hacker-rank/sherock-and-anagrams.js)
 
 
 ## LeetCode
-* [two-sums](leet-code/two-sum.js)
+* [Two Sums](leet-code/two-sum.js)
