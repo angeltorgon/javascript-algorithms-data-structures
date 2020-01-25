@@ -6,6 +6,7 @@ questions. Thera are also solutions for problems found several code challenge pl
 * [new-year-chaos](hacker-rank/new-year-chaos.js)
 * [minimim-swaps-1](hacker-rank/minimum-swaps-2.js)
 * [ransom-note](hacker-rank/ransom-note.js)
+* [two-strings](hacker-rank/two-strings.js)
 
 
 ## LeetCode
