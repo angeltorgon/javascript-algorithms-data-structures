@@ -7,7 +7,7 @@ questions. Thera are also solutions for problems found several code challenge pl
 * [Minimum Swaps 2](hacker-rank/minimum-swaps-2.js)
 * [ransom Note](hacker-rank/ransom-note.js)
 * [Two Strings](hacker-rank/two-strings.js)
-* [Sherlock and Anagrams](hacker-rank/sherock-and-anagrams.js)
+* [Sherlock and Anagrams](hacker-rank/sherlock-and-anagrams.js)
 
 
 ## LeetCode
