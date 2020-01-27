@@ -20,8 +20,23 @@ function countSwaps(a) {
 
 */
 
-function countSwaps(a) {
+// #&*() #&*() #&*() #&*() #&*() SOLUTION
 
+function countSwaps(a) {
+	// initialize swap counter
+	// create a while loop that runs until arrays are equal
+		// inside while do a for loop that loops over a
+			// inside the for loop check if the number is great than the next
+			// if it is then swap 
+			// increase swap counter
+	console.log("nums array", a);
 
 }
 
+// #&*() #&*() #&*() #&*() #&*() TESTS
+
+const numsArr1 = [1,3,2]; // 1
+const numsArr2 = [1,4,2,3]; // 2
+const numsArr3 = [4,3,2,1]; // 6
+
+console.log(countSwaps(numsArr1));
