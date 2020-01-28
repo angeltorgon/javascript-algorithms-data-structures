@@ -8,6 +8,7 @@ questions. Thera are also solutions for problems found several code challenge pl
 * [ransom Note](hacker-rank/ransom-note.js)
 * [Two Strings](hacker-rank/two-strings.js)
 * [Sherlock and Anagrams](hacker-rank/sherlock-and-anagrams.js)
+* [Bubble Sort](hacker-rank/bubble-sort.js)
 
 
 ## LeetCode

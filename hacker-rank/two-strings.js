@@ -25,7 +25,6 @@ twoStrings("helo", "hello");
 
 // %-+-> %-+-> %-+-> %-+-> %-+-> %-+-> SOLUTION 1
 
-
 function twoStrings(s1,s2) {
 	// initialize a map to store values of s1
 	const stringMap = {};
