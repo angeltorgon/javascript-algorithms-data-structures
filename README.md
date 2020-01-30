@@ -1,5 +1,10 @@
 # JavaScript Algorithms and Data Structures
-This repo is a collection of solutions for different types of algorithm and technical interciew
+
+---
+
+This repo has the solutions to the problems I'm using to prepare for technical job interviews. It
+also contains standard implementations for certain data structures.
+
 questions. Thera are also solutions for problems found several code challenge platforms like HackerRank and LeetCode.
 ---
 
