@@ -1,6 +1,10 @@
 # JavaScript Algorithms and Data Structures
 This repo is a collection of solutions for different types of algorithm and technical interciew
 questions. Thera are also solutions for problems found several code challenge platforms like HackerRank and LeetCode.
+---
+
+## Data Structures
+* [Singly Linked List](data-structures/singlyLinkedList.js)
 
 ## HackerRank
 * [New Year Chaos](hacker-rank/new-year-chaos.js)
