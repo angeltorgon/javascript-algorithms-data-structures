@@ -15,47 +15,43 @@ function sherlockAndAnagrams(s) { // s = "abba"
 // $_=>> $_=>> $_=>> $_=>> $_=>> SOLUTION
 
 function sherlockAndAnagrams(s) {
-	console.log("s -- ", s);
-	// initialize anagramMap
-	// initialize range
-	// initialize anagramCounter
-	const anagramMap = {};
-	let range = 1;
-	let anagramCounter = 0;
+    // initialize anagramMap
+    // initialize range
+    // initialize anagramCounter
+    const anagramMap = {};
+    let range = 1;
+    let anagramCounter = 0;
 
-	// while loop until range is === s.length
-	while(range < s.length){
-		// populate map using for loop
-		for(let i = 0; i < s.length; i++){
-			if(s[(i + range) - 1]){
-				const key = s.slice(i, i + range).split("").sort().join("");
-					//console.log("range", `${i} - ${i + range} : ${key}`);
-				anagramMap[key] = anagramMap[key] + 1 || 1;
-			};
-		};
-		range ++;
-	};
-	// loop over anagram and find all keys that have values of greater than 1
-	// increase counter if they are
-	for(let key in anagramMap) {
-		console.log("key: ", key);
-		const value = anagramMap[key];
-		if(value === 2) {
-			anagramCounter++;
-		}
-		if(value > 2) {
-			console.log("value", value);
-			for(let i = 0; i < value; i++) {
-				console.log(`i - ${i}....value - ${value}`);
-				for(let j = i + 1; j < value; j++) {
-					console.log("j---", j);	
-					anagramCounter ++;
-				}
-			};
-		}
-	};
-	return anagramCounter;
+    // while loop until range is === s.length
+    while(range < s.length){
+        // populate map using for loop
+        for(let i = 0; i < s.length; i++){
+            if(s[(i + range) - 1]){
+                const key = s.slice(i, i + range).split("").sort().join("");
+                    //console.log("range", `${i} - ${i + range} : ${key}`);
+                anagramMap[key] = anagramMap[key] + 1 || 1;
+            };
+        };
+        range ++;
+    };
+    // loop over anagram and find all keys that have values of greater than 1
+    // increase counter if they are
+    for(let key in anagramMap) {
+        const value = anagramMap[key];
+        if(value === 2) {
+            anagramCounter++;
+        }
+        if(value > 2) {
+            for(let i = 0; i < value; i++) {
+                for(let j = i + 1; j < value; j++) {
+                    anagramCounter ++;
+                }
+            };
+        }
+    };
+    return anagramCounter;
 }
+
 
 
 // $_=>> $_=>> $_=>> $_=>> $_=>> TESTS
