@@ -17,6 +17,7 @@ questions. Thera are also solutions for problems found several code challenge pl
 * [Bubble Sort](hacker-rank/bubble-sort.js)
 * [Count Triplets](hacker-rank/count-triplets.js)
 * [Simple Array Sum](hacker-rank/simple-array-sum.js)
+* [A Very Big Sum](hacker-rank/a-very-big-sum.js)
 
 
 ## LeetCode
