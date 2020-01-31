@@ -1,6 +1,6 @@
 /*
  *
- * QUESTION 2
+ * CHALLENGE TEMPLATE
  *
  *
  *
