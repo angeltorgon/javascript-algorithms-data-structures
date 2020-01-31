@@ -16,7 +16,7 @@
 
 /*
  *
- * ***** Solution
+ * ***** SOLUTION
  *
  * */
 
@@ -39,7 +39,7 @@ function simpleArraySum(ar) {
 
 
 /*
- * ***** Tests
+ * ***** TESTS
  *
  * */
 
@@ -48,7 +48,6 @@ console.log("## TEST 1 ----- > ", simpleArraySum(numsArr1)); // 6
 
 const numsArr2 = [10, 20, 30, 40];
 console.log("## TEST 2 ----- > ", simpleArraySum(numsArr2)); // 100
-
 
 const numsArr3 = [3, 13, 45, 67];
 console.log("## TEST 3 ----- > ", simpleArraySum(numsArr3)); // 128

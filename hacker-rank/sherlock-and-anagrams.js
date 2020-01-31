@@ -66,28 +66,3 @@ console.log("s2 --- ", sherlockAndAnagrams(s2));
 //console.log("s3 --- ", sherlockAndAnagrams(s3));
 //console.log("s4 --- ", sherlockAndAnagrams(s4));
 
-esc - Normal mode
-i - Instrt mode 
-u - undo
-v - Visual mode
-c - change
-d - delete
-h - left
-j - up
-k - down
-l - right
-0 - beginning of line
-$ - end of line
-w - move down a word
-b - move back a word
-H - move cursor to highest of page
-M - move cursor to middle of page
-L - move cursor to lowest of page
-
-
-
-3k - up 3 lines
-
-OBJECTS
-aw - a word
-ap - a paragraph
