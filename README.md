@@ -18,6 +18,7 @@ questions. Thera are also solutions for problems found several code challenge pl
 * [Count Triplets](hacker-rank/count-triplets.js)
 * [Simple Array Sum](hacker-rank/simple-array-sum.js)
 * [A Very Big Sum](hacker-rank/a-very-big-sum.js)
+* [Diagonal Difference](hacker-rank/diagonal-difference.js)
 
 
 ## LeetCode
