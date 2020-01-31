@@ -16,6 +16,7 @@ questions. Thera are also solutions for problems found several code challenge pl
 * [Sherlock and Anagrams](hacker-rank/sherlock-and-anagrams.js)
 * [Bubble Sort](hacker-rank/bubble-sort.js)
 * [Count Triplets](hacker-rank/count-triplets.js)
+* [Simple Array Sum](hacker-rank/simple-array-sum.js)
 
 
 ## LeetCode
