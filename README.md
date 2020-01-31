@@ -11,7 +11,7 @@ questions. Thera are also solutions for problems found several code challenge pl
 ## HackerRank
 * [New Year Chaos](hacker-rank/new-year-chaos.js)
 * [Minimum Swaps 2](hacker-rank/minimum-swaps-2.js)
-* [ransom Note](hacker-rank/ransom-note.js)
+* [Ransom Note](hacker-rank/ransom-note.js)
 * [Two Strings](hacker-rank/two-strings.js)
 * [Sherlock and Anagrams](hacker-rank/sherlock-and-anagrams.js)
 * [Bubble Sort](hacker-rank/bubble-sort.js)

@@ -1,4 +1,4 @@
-/*
+/* DONE
 
 Create a function that implements bubble sort. It is given an array and it must return 3 things. The
 number of swaps it took to sort the array, the first element of the sorted array, and the last
