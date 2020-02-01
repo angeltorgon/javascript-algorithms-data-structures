@@ -1,6 +1,7 @@
 /*
- *
- * SIMPLE ARRAY SUM
+ *  ------------------
+ * |     TEMPLATE     |
+ *  ------------------
  *
  *
  * Given an array of integers, find the sum of its elements.
@@ -9,7 +10,7 @@
  *
  * numArr = [1, 3, 4 ]
  *
- * simpleArraySum(numArr) // returns 1 + 3 + 4
+ * template(numArr) // returns 1 + 3 + 4
  *
  *
  * */
@@ -20,24 +21,24 @@
  *
  * */
 
-function simpleArraySum(args) {
+function template(args) {
 	return null;
 };
 
 
 
 /*
+ *
  * ***** TESTS
  *
  * */
 
-const numsArr1 = null;
-console.log("## TEST 1 ----- > ", simpleArraySum(numsArr1)); // 6
+const args1 = null;
+console.log("## TEST 1 ----- > ", template(args1)); // 6
 
-// const numsArr2 = null;
-// console.log("## TEST 2 ----- > ", simpleArraySum(numsArr2)); // 100
+// const args2 = null;
+// console.log("## TEST 2 ----- > ", template(args2)); // 100
 
-// const numsArr3 = null;
-// console.log("## TEST 3 ----- > ", simpleArraySum(numsArr3)); // 128
-
+// const args3 = null;
+// console.log("## TEST 3 ----- > ", template(args3)); // 128
 

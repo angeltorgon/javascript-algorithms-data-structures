@@ -1,26 +1,43 @@
-/* DONE
-
-Create a function that implements bubble sort. It is given an array and it must return 3 things. The
-number of swaps it took to sort the array, the first element of the sorted array, and the last
-element of the sorted array. 
-
-	Array is sorted in 0 swaps.
-	First Element: 1
-	Last Element: 3
-
-const numArr = [2,1,3,4];
-
-function countSwaps(a) {
-	
-	console.log(`Array is sorted in ${} swaps`);
-	console.log(`First Element: ${}`);
-	console.log(`Last Element: ${}`);
-
-}
-
+/*
+ *
+ * BUBBLE SORT
+ *
+ *
+ *
+ *
+ * Create a function that implements bubble sort. 
+ * It is given an array and it must return 3 things. 
+ * The number of swaps it took to sort the array, the first 
+ * element of the sorted array, and the last
+ * element of the sorted array. 
+ * Array is sorted in 0 swaps.
+ * First Element: 1
+ * Last Element: 3
+ *
+ *
+ * e.g.
+ *
+ *
+ * const numArr = [2,1,3,4];
+ * 
+ * function countSwaps(a) {
+ * 	
+ * 	console.log(`Array is sorted in ${} swaps`);
+ * 	console.log(`First Element: ${}`);
+ * 	console.log(`Last Element: ${}`);
+ * 
+ * }
+ *
+ *
+ *
+ *
 */
 
-// #&*() #&*() #&*() #&*() #&*() SOLUTION
+/*
+ *
+ * ***** SOLUTION
+ *
+ * */
 
 function countSwaps(a) {
 	// initialize swap counter
@@ -55,7 +72,11 @@ function countSwaps(a) {
 	console.log(`Last Element: ${a[a.length -1]}`);
 }
 
-// #&*() #&*() #&*() #&*() #&*() TESTS
+/*
+ *
+ * ***** TESTS
+ *
+ * */
 
 const numsArr1 = [1,3,2]; // 1
 const numsArr2 = [1,4,2,3]; // 2

@@ -3,6 +3,10 @@
  * A VERY BIG SUM
  *
  *
+ *
+ *
+ *
+ *
  * Calculate and print the sum of all the numbers in the array
  *
  * e.g.
