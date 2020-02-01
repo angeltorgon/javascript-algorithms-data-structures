@@ -34,10 +34,10 @@ function simpleArraySum(args) {
 const numsArr1 = null;
 console.log("## TEST 1 ----- > ", simpleArraySum(numsArr1)); // 6
 
-const numsArr2 = null;
-console.log("## TEST 2 ----- > ", simpleArraySum(numsArr2)); // 100
+// const numsArr2 = null;
+// console.log("## TEST 2 ----- > ", simpleArraySum(numsArr2)); // 100
 
-const numsArr3 = null;
-console.log("## TEST 3 ----- > ", simpleArraySum(numsArr3)); // 128
+// const numsArr3 = null;
+// console.log("## TEST 3 ----- > ", simpleArraySum(numsArr3)); // 128
 
 
