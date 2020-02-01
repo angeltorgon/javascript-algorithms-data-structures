@@ -20,6 +20,7 @@ questions. Thera are also solutions for problems found several code challenge pl
 * [A Very Big Sum](hacker-rank/a-very-big-sum.js)
 * [Diagonal Difference](hacker-rank/diagonal-difference.js)
 * [Plus Minus](hacker-rank/plus-minus.js)
+* [Staircase](hacker-rank/staircase.js)
 
 
 ## LeetCode

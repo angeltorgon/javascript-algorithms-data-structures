@@ -1,15 +1,21 @@
 /*
  *
- * SIMPLE ARRAY SUM
+ * STAIRCASE
  *
  *
- * Given an array of integers, find the sum of its elements.
+ * Write a program that prints a staircase of size n
+ * where n is the height and width of bass
  *
  * e.g.
  *
- * numArr = [1, 3, 4 ]
+ * staircase(4) 
  *
- * staircase(numArr) // returns 1 + 3 + 4
+ * prints this...
+ *
+ *    #
+ *   ##
+ *  ###
+ * ####
  *
  *
  * */
@@ -20,7 +26,12 @@
  *
  * */
 
-function staircase(args) {
+function staircase(n) {
+    for(let i = 1; i <= n; i++){
+        const output = "#".repeat(i);
+        const spaces = " ".repeat(n - i);
+        console.log(spaces + output);
+    };
 	return null;
 };
 
@@ -31,8 +42,16 @@ function staircase(args) {
  *
  * */
 
-const numsArr1 = null;
-console.log("## TEST 1 ----- > ", staircase(numsArr1)); // 6
+console.log("## TEST 1 ----- > ", staircase(4)); 
+
+/*
+ * 
+ *    #
+ *   ##
+ *  ###
+ * ####
+ *
+ * */
 
 // const numsArr2 = null;
 // console.log("## TEST 2 ----- > ", staircase(numsArr2)); // 100
