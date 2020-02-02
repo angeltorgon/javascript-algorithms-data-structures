@@ -1,7 +1,8 @@
 /*
  *
- * SIMPLE ARRAY SUM
- *
+ *  ------------------
+ * | SIMPLE ARRAY SUM |
+ *  ------------------
  *
  * Given an array of integers, find the sum of its elements.
  *
@@ -20,7 +21,6 @@
  *
  * */
 
-//ar = 1    2   3
 
 function simpleArraySum(ar) {
 	//counter = 0;

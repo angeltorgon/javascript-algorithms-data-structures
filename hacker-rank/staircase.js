@@ -1,7 +1,8 @@
 /*
  *
- * STAIRCASE
- *
+ *  -----------
+ * | STAIRCASE |
+ *  -----------
  *
  * Write a program that prints a staircase of size n
  * where n is the height and width of bass
