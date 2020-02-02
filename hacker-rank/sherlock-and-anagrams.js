@@ -1,18 +1,36 @@
 /*
+ *
+ *  ------------------------
+ * |  SHERLOCK AND ANAGRAMS |
+ *  ------------------------
+ *
+ *
+ *
+ * Two strings are anagrams of each other if the 
+ * letters of one string can be rearranged to form 
+ * the other string. given a string, find the number of pairs 
+ * of substrings of the string that are anagrams of each other.
+ * It must return an integer that represents the number 
+ * of anagrammatic pairs of substrings 
+ *
+ *
+ *
+ * e.g.
+ * 
+ * function sherlockAndAnagrams(s) { // s = "abba"
+ *      // should return 4 --> ["a","a"], ["b","b"], ["ab", "ba"], ["abb", "bba"]
+ * }
+ *
+ *
+ * */
 
-two strings are anagrams of each other if the letters of one string can be rearranged to form the other string. given a string, find the number of pairs of substrings of the string that are anagrams of each other.
 
-It must return an integer that represents the number of anagrammatic pairs of substrings 
+/*
+ *
+ * ***** SOLUTION
+ *
+ * */
 
-e.g.
-
-function sherlockAndAnagrams(s) { // s = "abba"
-	// should return 4 --> ["a","a"], ["b","b"], ["ab", "ba"], ["abb", "bba"]
-}
-
-*/
-
-// $_=>> $_=>> $_=>> $_=>> $_=>> SOLUTION
 
 function sherlockAndAnagrams(s) {
     // initialize anagramMap
@@ -54,7 +72,13 @@ function sherlockAndAnagrams(s) {
 
 
 
-// $_=>> $_=>> $_=>> $_=>> $_=>> TESTS
+/*
+ *
+ * ***** TESTS
+ *
+ * */
+
+
 
 const s1 = "kkkk"; // 10 
 const s2 = "abba"; // 4
