@@ -23,11 +23,58 @@
  * */
 
 function maxArrayQueries(n, queries) {
-    console.log("n - ", n);
-    console.log("queries - ", queries);
+    let maxValue = 0;
+    const numberMap = {};
+    // run queries
+    for(let query of queries){
+        for(let i = query[0]; i <= query[1]; i++) {
+            numberMap[i] = numberMap[i] + query[2] || query[2];
+            if(numberMap[i] > maxValue){
+                maxValue = numberMap[i];
+            };
+        };
+    };
+
+    return maxValue;
 };
 
+// function maxArrayQueries(n, queries) {
+//     // create array of zeros
+//     let initialArr = [];
+//     for(let i = 0; i < n; i++){
+//         initialArr.push(0);
+//     };
+//     // console.log("initialArr", initialArr);
+//     let lowest = 0;
+//     let highest = 0;
 
+//     // run queries
+//     for(let query of queries){
+//         if(query[0] < lowest){
+//             lowest = query[0];
+//         };
+//         if(query[0] > highest){
+//             highest = query[0];
+//         };
+//         // console.log("query --- ", query); 
+//         for(let j = query[0]; j <= query[1]; j ++){
+//             initialArr[j - 1] += query[2];
+//         };
+        
+//         // console.log("finishedArr -- ", initialArr);
+//     };
+
+//     // find largest value and return it
+//     // initialize maxValue
+//     let maxValue = 0;
+//     for(let i = lowest - 1; i < highest; i++){
+//         if(initialArr[i] > maxValue){
+//             maxValue = initialArr[i];
+//         };
+//     };
+
+//     return maxValue;
+// };
 
 /*
  *
