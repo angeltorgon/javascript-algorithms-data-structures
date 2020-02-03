@@ -21,6 +21,9 @@ questions. Thera are also solutions for problems found several code challenge pl
 * [Diagonal Difference](hacker-rank/diagonal-difference.js)
 * [Plus Minus](hacker-rank/plus-minus.js)
 * [Staircase](hacker-rank/staircase.js)
+* [Array Partitioning](hacker-rank/array-partitioning.js)
+* [Note Construct](hacker-rank/note-construct.js)
+* [Max Array Queries](hacker-rank/max-array-queries.js)
 
 
 ## LeetCode

@@ -1,7 +1,7 @@
 /*
  *
  *  -------------------
- * | Note Construction |
+ * | NOTE CONSTRUCTION |
  *  -------------------
  *
  *
