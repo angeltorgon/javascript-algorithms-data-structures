@@ -1,8 +1,8 @@
 /*
  *
- *  ------------------
- * |    QUESTION 3    |
- *  ------------------
+ *  ----------------------
+ * | MAX OF ARRAY QUERIES |
+ *  ----------------------
  *
  *
  * Given an array of integers, find the sum of its elements.
@@ -11,7 +11,7 @@
  *
  * numArr = [1, 3, 4 ]
  *
- * question3(numArr) // returns 1 + 3 + 4
+ * maxArrayQueries(numArr) // returns 1 + 3 + 4
  *
  *
  * */
@@ -22,8 +22,9 @@
  *
  * */
 
-function question3(args) {
-	return null;
+function maxArrayQueries(n, queries) {
+    console.log("n - ", n);
+    console.log("queries - ", queries);
 };
 
 
@@ -34,13 +35,20 @@ function question3(args) {
  *
  * */
 
-const args1 = null;
-console.log("## TEST 1 ----- > ", question3(args1)); // 6
+const n1 = 10;
+const queries1 = [
+    [1, 5, 3],
+    [4, 8, 7],
+    [6, 9, 1]
+];
+console.log("## TEST 1 ----- > ", maxArrayQueries(n1, queries1)); // 10
 
-// const args2 = null;
-// console.log("## TEST 2 ----- > ", question3(args2)); // 100
+// const magazine2 = ["hello", "are", "you", "there", "friend"];
+// const note2 = ["friend", "hello", "are", "you", "there"];
+// console.log("## TEST 1 ----- > ", maxArrayQueries(magazine2, note2)); // true
 
-// const args3 = null;
-// console.log("## TEST 3 ----- > ", question3(args3)); // 128
+// const magazine3 = ["hello", "are", "you", "there", "friend"];
+// const note3 = ["hello", "friend", "hello", "are", "you", "there"];
+// console.log("## TEST 1 ----- > ", maxArrayQueries(magazine3, note3)); // false
 
 
