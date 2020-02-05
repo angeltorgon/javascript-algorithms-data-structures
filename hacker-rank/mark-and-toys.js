@@ -5,13 +5,35 @@
  *  -----------------
  *
  *
- * Given an array of integers, find the sum of its elements.
+ * Mark and Jane are very happy after having their first child. 
+ * Their son loves toys, so Mark wants to buy some. 
+ * There are a number of different toys lying in front of him, 
+ * tagged with their prices. Mark has only a certain amount 
+ * to spend, and he wants to maximize the number of toys 
+ * he buys with this money.
+ *
+ * Given a list of prices and an amount to spend, 
+ * what is the maximum number of toys Mark can buy?
+ *
+ *
  *
  * e.g.
  *
- * numArr = [1, 3, 4 ]
+ * prices = [1, 2, 3, 4] // prices of toys
+ * k = 7 // amount of dollars he can spend
  *
- * maximumToys(numArr) // returns 1 + 3 + 4
+ * maximumToys(prices, k) // he can buy [1,2,3] for 6
+ *
+ * 
+ * Complete the function maximumToys in the editor below. 
+ * It should return an integer representing the maximum 
+ * number of toys Mark can purchase.
+ *
+ * MAXIMUMTOYS HAS THE FOLLOWING PARAMETER(S):
+ *
+ * prices: an array of integers representing toy prices
+ * k: an integer, Mark's budget
+ *
  *
  *
  * */
