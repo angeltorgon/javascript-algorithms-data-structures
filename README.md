@@ -25,6 +25,7 @@ questions. Thera are also solutions for problems found several code challenge pl
 * [Note Construct](hacker-rank/note-construct.js)
 * [Max Array Queries](hacker-rank/max-array-queries.js)
 * [Find Merge Node](hacker-rank/find-merge-node.js)
+* [Mark And Toys](hacker-rank/mark-and-toys.js)
 
 
 ## LeetCode
