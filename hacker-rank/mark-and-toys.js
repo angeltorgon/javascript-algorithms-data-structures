@@ -50,11 +50,13 @@ function maximumToys(prices, k) {
 
 
     // sort prices
-    prices.sort();
+    prices.sort( (a, b) => a - b );
 
     // initialize totalCost and index to use in while loop
     let totalCost = 0;
     let index = 0;
+    
+    console.log("sorted prices -- ", prices);
 
 
     // use a while loop to find how many toys we can buy
@@ -77,14 +79,15 @@ function maximumToys(prices, k) {
  *
  * */
 
-const prices1 = [4,3,2,1]
-const k1 = 7
+// const prices1 = [4,3,2,1]
+// const k1 = 7
+// console.log("## TEST 1 ----- > ", maximumToys(prices1, k1)); // 3
 
-console.log("## TEST 1 ----- > ", maximumToys(prices1, k1)); // 3
+// const prices2 = [4,60,5,2,1]
+// const k2 = 12
+// console.log("## TEST 2 ----- > ", maximumToys(prices2, k2)); // 4
 
-const prices2 = [4,60,5,2,1]
-const k2 = 12
-console.log("## TEST 2 ----- > ", maximumToys(prices2, k2)); // 4
-
-// console.log("## TEST 3 ----- > ", maximumToys(prices, k)); // 128
+const prices3 = [1, 12, 5, 111, 200, 1000, 10]
+const k3 = 50
+console.log("## TEST 3 ----- > ", maximumToys(prices3, k3)); // 4
 
