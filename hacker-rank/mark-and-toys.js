@@ -45,22 +45,28 @@
  * */
 
 function maximumToys(prices, k) {
+    // initialize toy counter
     let counter = 0;
-    prices.sort();
-    console.log("prices -- ", prices);
 
+
+    // sort prices
+    prices.sort();
+
+    // initialize totalCost and index to use in while loop
     let totalCost = 0;
     let index = 0;
 
+
+    // use a while loop to find how many toys we can buy
+    // until total is <= k
     while(prices[index] + totalCost <= k){
         totalCost += prices[index];
         counter ++;
         index ++;
     };
 
+    // return total number of toys
     return counter;
-
-
 };
 
 
