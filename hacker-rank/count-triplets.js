@@ -46,9 +46,14 @@ function countTriplets(numsArr, r) {
  *
  * */
 
-const numsArr1 = [1, 3, 9, 9, 27, 81]
-const r1 = 3
+const numsArr1 = [1, 2, 2, 4]
+const r1 = 2
 console.log("## TEST 1 ----- > ", countTriplets(numsArr1, r1)); // 6
+
+
+// const numsArr1 = [1, 3, 9, 9, 27, 81]
+// const r1 = 3
+// console.log("## TEST 1 ----- > ", countTriplets(numsArr1, r1)); // 6
 
 // const numsArr2 = null;
 // console.log("## TEST 2 ----- > ", countTriplets(numsArr2)); // 100

@@ -26,6 +26,7 @@ questions. Thera are also solutions for problems found several code challenge pl
 * [Max Array Queries](hacker-rank/max-array-queries.js)
 * [Find Merge Node](hacker-rank/find-merge-node.js)
 * [Mark And Toys](hacker-rank/mark-and-toys.js)
+* [Birthday Cake Candles](hacker-rank/birthday-cake-candles.js)
 
 
 ## LeetCode
