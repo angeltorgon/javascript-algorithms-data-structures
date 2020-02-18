@@ -1,17 +1,20 @@
 /*
  *
- *  ------------------
- * |     CHALLENGE 1  |
- *  ------------------
+ *  -----------------------
+ * | BIRTHDAY CAKE CANDLES |
+ *  -----------------------
  *
  *
- * Given an array of integers, find the sum of its elements.
+ * Given an integer for the number of birthdsy candles and 
+ * an array of the heights of each of those candles. Return
+ * how many candles will be blown if only the tallest candles
+ * are blown.
  *
  * e.g.
  *
- * numArr = [1, 3, 4 ]
+ * candleHeights = [1, 3, 4, 4 ]
  *
- * template(numArr) // returns 1 + 3 + 4
+ * birthdayCakeCandles(numArr) // returns 2 (two candles of height 4)
  *
  *
  * */
@@ -22,7 +25,7 @@
  *
  * */
 
-function template(args) {
+function birthdayCakeCandles(args) {
 	return null;
 };
 
@@ -35,13 +38,13 @@ function template(args) {
  * */
 
 const args1 = null;
-console.log("## TEST 1 ----- > ", template(args1)); // 6
+console.log("## TEST 1 ----- > ", birthdayCakeCandles(args1)); // 6
 
 // const args2 = null;
-// console.log("## TEST 2 ----- > ", template(args2)); // 100
+// console.log("## TEST 2 ----- > ", birthdayCakeCandles(args2)); // 100
 
 // const args3 = null;
-// console.log("## TEST 3 ----- > ", template(args3)); // 128
+// console.log("## TEST 3 ----- > ", birthdayCakeCandles(args3)); // 128
 
 function frequencyQueries(queries) {
     // Write your code here
