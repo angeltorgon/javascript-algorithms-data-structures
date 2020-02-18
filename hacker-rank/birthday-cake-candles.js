@@ -25,8 +25,29 @@
  *
  * */
 
-function birthdayCakeCandles(args) {
-	return null;
+function birthdayCakeCandles(arr) {
+    // initialize counter
+    let counter = 0;
+    // initialize maxValue
+    let maxValue = 0;
+
+    // loop over array
+    for(let num of arr) {
+        // f arr[i] === maxValue
+        if(num === maxValue){
+            // counter = 1
+            counter ++;
+        // else if arr[i] > maxValue
+        } else if (num > maxValue){
+            // maxValue = arr[1]
+            maxValue = num;
+            // counter = 1
+            counter = 1;
+        }
+    }
+
+    console.log("counter - ", counter);
+	return counter;
 };
 
 
@@ -37,40 +58,12 @@ function birthdayCakeCandles(args) {
  *
  * */
 
-const args1 = null;
+const args1 = [3,2,1,3];
 console.log("## TEST 1 ----- > ", birthdayCakeCandles(args1)); // 6
 
-// const args2 = null;
-// console.log("## TEST 2 ----- > ", birthdayCakeCandles(args2)); // 100
+const args2 = [3,2,1,3,3, 4, 5];
+console.log("## TEST 2 ----- > ", birthdayCakeCandles(args2)); // 6
 
 // const args3 = null;
 // console.log("## TEST 3 ----- > ", birthdayCakeCandles(args3)); // 128
-
-function frequencyQueries(queries) {
-    // Write your code here
-    const map = {};
-    const frequencies = {};
-    const allQueryOutputs = [];
-
-    for(let query of queries){
-        if(query[0] === 1) {
-            map[query[1]] = map[query[1]] + 1 || 1;
-            frequencies[map[query[1]]] = frequencies[map[query[1]]] + 1 || 1;
-        } 
-
-        if (query[0] === 2) {
-            if(map[query[1]]) map[query[1]] - 1;
-        }
-
-        if (query[0] === 3) {
-            if(frequencies[query[1]] > 0) {
-                allQueryOutputs.push(1)
-            }
-            else allQueryOutputs.push(0)
-
-            // present ? allQueryOutputs.push(1) : allQueryOutputs.push(0);
-        }
-    };
-    return allQueryOutputs;
-}
 
