@@ -19,6 +19,7 @@ questions. Thera are also solutions for problems found several code challenge pl
 * [Mark And Toys](hacker-rank/mark-and-toys.js)
 * [Max Array Queries](hacker-rank/max-array-queries.js)
 * [Minimum Swaps 2](hacker-rank/minimum-swaps-2.js)
+* [Mini Max Sum](hacker-rank/mini-max-sum.js)
 * [New Year Chaos](hacker-rank/new-year-chaos.js)
 * [Note Construct](hacker-rank/note-construct.js)
 * [Plus Minus](hacker-rank/plus-minus.js)
