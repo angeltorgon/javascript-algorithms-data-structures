@@ -1,18 +1,50 @@
+/*
+ *
+ * Imports
+ *
+ * */
+
+const newNode = require("./linkedListNode");
+
+/*
+ *
+ * Class Definition
+ *
+ * */
+
 class doublyLinkedList {
     constructor() {
-        this.prev = null;
+        this.size = 0;
         this.head = null;
-        this.next = null;
+        this.tail = null;
     }
 
-    insert(data) {
-         
+    insertAtHead(data) {
+        let node = new newNode(data);
+        if(this.size === 0) {
+            this.head = node;
+            this.tail = node;
+            this.size = 1;
+        } else {
+            node.next = this.head;
+            this.head.prev = node;
+            this.head = node;
+            this.size ++;
+        }
     };
 }
 
+/*
+ *
+ * Tests
+ *
+ * */
 
 const doublyLinkedList1 = new doublyLinkedList();
 
-console.log("DOUBLY LINKED LIST", doublyLinkedList1.prev);
-console.log("DOUBLY LINKED LIST", doublyLinkedList1.prev);
-console.log("DOUBLY LINKED LIST", doublyLinkedList1.prev);
+doublyLinkedList1.insertAtHead(1);
+doublyLinkedList1.insertAtHead(2);
+
+console.log("HEAD - ", doublyLinkedList1.head);
+console.log("SIZE - ", doublyLinkedList1.size);
+
