@@ -74,6 +74,21 @@ class doublyLinkedList {
             this.size --;
         }
     };
+
+    deleteAtData(data) {
+        const originalHead = this.head;
+        while(this.head !== null) {
+            if(this.head.data === data) {
+                this.head.prev.next = this.head.next;
+                this.head.next.prev = this.head.prev;
+                this.head = originalHead;
+                return
+            }
+            this.head = this.head.next;
+        };
+        this.head = originalHead;
+        console.log("Value was not found.");
+    };
 }
 
 /*
@@ -121,10 +136,15 @@ doublyLinkedList1.deleteAtHead();
 
 printLinkedList(doublyLinkedList1)
 
-doublyLinkedList1.deleteAtTail();
-doublyLinkedList1.deleteAtTail();
-doublyLinkedList1.deleteAtTail();
-doublyLinkedList1.deleteAtTail();
-
-console.log("final size  - ", doublyLinkedList1.size);
+doublyLinkedList1.deleteAtData(3);
 printLinkedList(doublyLinkedList1)
+
+doublyLinkedList1.deleteAtData(9);
+printLinkedList(doublyLinkedList1)
+// doublyLinkedList1.deleteAtTail();
+// doublyLinkedList1.deleteAtTail();
+// doublyLinkedList1.deleteAtTail();
+// doublyLinkedList1.deleteAtTail();
+// 
+// console.log("final size  - ", doublyLinkedList1.size);
+// printLinkedList(doublyLinkedList1)
