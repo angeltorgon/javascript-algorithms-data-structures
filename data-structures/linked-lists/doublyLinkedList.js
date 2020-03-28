@@ -82,6 +82,7 @@ class doublyLinkedList {
                 this.head.prev.next = this.head.next;
                 this.head.next.prev = this.head.prev;
                 this.head = originalHead;
+                this.size --;
                 return
             }
             this.head = this.head.next;
