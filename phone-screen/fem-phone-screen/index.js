@@ -54,10 +54,13 @@ class FoodsClass {
     }
 
     renderFoods() {
-        for(let food of this.foodData){
-            // crete container
-            let container = document.createElement("div");
+        // crete container
+        this.rootElement.addEventListener("click", ({target}) => {
+            target.remove()
+        }) 
+        let fragment = document.createDocumentFragment("div");
 
+        for(let food of this.foodData){
             // create foodImage tag and text
             let foodImage = document.createElement("p");
             let foodImageText = document.createTextNode(food.image);
@@ -69,25 +72,13 @@ class FoodsClass {
             foodName.appendChild(foodNameText);
 
             // append all food tags to container
-            container.appendChild(foodImage)
-            container.appendChild(foodName)
-            this.rootElement.append(container);
+            fragment.appendChild(foodImage)
+            fragment.appendChild(foodName)
 
+        this.rootElement.append(fragment);
             // added styles
-            container.style.border = "1px solid black"
-            container.style.width = "200px"
-            container.style.margin = "0 auto"
-
-            container.addEventListener("click", () => this.deleteFood(food.id)) 
-
         }
-    }
 
-    deleteFood(id) {
-        console.log("id - ", id);
-        const filteredData = this.foodData.filter((foodObject) => foodObject.id !== id); 
-        this.foodData = filteredData;
-        this.renderFoods()
     }
 }
 
