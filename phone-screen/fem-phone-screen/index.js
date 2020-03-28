@@ -46,3 +46,21 @@ const foodData = [
 
 
 /** YOUR CODE BELOW **/
+
+class FoodsClass {
+    constructor(rootElement, foodData) {
+        this.rootElement = rootElement;
+        this.foodData = foodData;
+    }
+
+    renderFoods() {
+        for(let food of this.foodData){
+            console.log(food);
+            let container = document.createElement("div")
+            console.log(container)
+        }
+    }
+}
+
+const foodsInstance = new FoodsClass(rootElement, foodData)
+foodsInstance.renderFoods();
