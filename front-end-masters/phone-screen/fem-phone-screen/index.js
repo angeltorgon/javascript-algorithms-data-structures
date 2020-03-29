@@ -75,7 +75,7 @@ class FoodsClass {
             fragment.appendChild(foodImage)
             fragment.appendChild(foodName)
 
-        this.rootElement.append(fragment);
+            this.rootElement.append(fragment);
             // added styles
         }
 
